@@ -1,30 +1,75 @@
 @media screen and (min-width: 600px) {
     main {
         display: grid;
-        grid-template-columns: 21em 21em 21em;
-        grid-template-rows: 10em 10em 10em 10em;
+        grid-template-columns: 21em 22em 21em;
+        grid-template-rows: 10em 10em 10em;
+        justify-items: center;
+    }
+
+    header > p {
+        margin-bottom: 0em;
+        margin-right: 10em;
+        margin-left: 10em;
     }
 
     div.supervisor {
+        width: 19em;
+        height: 12.5em;
         grid-row: 2 / 2;
         grid-column: 1 / 1;
-        margin-left: 4.5em;
+        margin-left: 2em;
     }
 
     div.team {
+        width: 19em;
+        height: 12.5em;
         grid-row: 1;
         grid-column: 2;
-        margin-top: 2em;
+        margin-top: 3em;
     }
     div.karma {
+        width: 19em;
+        height: 12.5em;
         grid-row: 3 / 3;
         grid-column: 2 / 2;
-        margin-top: -2em;
+        margin-top: -3em;
     }
     div.calculator {
+        width: 19em;
+        height: 12.5em;
         grid-row: 2;
         grid-column: 3;
-        margin-right: 4em;
+    }
+
+    footer {
+        margin-left: -.5em;
+        grid-row: 4;
+        grid-column: 2;
     }
     
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        margin-top: -3em;
+    }
+    header > h1 {
+        font-size: 2em;
+    }
+
+    header > p {
+        font-size: 1em;
+    }
+
+    main {
+        margin-top: -3em;
+    }
+
+    div.supervisor, div.team, div.karma, div.calculator {
+        height: 11em;
+    }
+
+    div.team {
+        margin-top: 4em;
+    }
 }
