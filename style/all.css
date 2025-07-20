@@ -41,10 +41,12 @@
         grid-column: 3;
     }
 
-    footer {
+    .attribution {
         margin-left: -.5em;
         grid-row: 4;
         grid-column: 2;
+        margin-top: 0em;
+        margin-bottom: 0em;
     }
     
 }
